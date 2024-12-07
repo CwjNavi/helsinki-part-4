@@ -1,0 +1,13 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title": "hawk tuah",
+    "author": "hawk tuah girl",
+    "url": "hawk coinbase",
+    "likes": 699
+}
+
+###
+
+GET http://localhost:3003/api/blogs
