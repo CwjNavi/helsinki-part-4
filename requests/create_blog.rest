@@ -10,4 +10,26 @@ Content-Type: application/json
 
 ###
 
+PUT http://localhost:3003/api/blogs/6774d8d5308c0645bf8df5ff
+Content-Type: application/json
+
+{
+    "title": "pra tuah",
+    "author": "falcon"
+}
+
+###
+
 GET http://localhost:3003/api/blogs
+
+###
+
+GET http://localhost:3003/api/blogs/6772a7ac68a6ea8941d1e3da
+
+###
+
+GET http://localhost:3003/api/blogs/author/hawk%20tuah%20girl
+
+###
+
+DELETE http://localhost:3003/api/blogs/6774d21cf830f5aedb81022f
