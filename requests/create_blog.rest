@@ -1,35 +1,45 @@
+### get without authorization
+GET http://localhost:3003/api/blogs
+
+### this is using ivan's token
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImN3aml2YW4iLCJpZCI6IjY3ZGMyN2JlMTBkYjc0ODAyOWFmY2Q3YSIsImlhdCI6MTc0MjQ4MTUwMn0.joLGclFDqf50MgswzoZ4ck7P2tBBAx3ovIREtnrWn6o
 
 {
-    "title": "hawk tuah",
-    "author": "hawk tuah girl",
-    "url": "hawk coinbase",
-    "likes": 699
+    "title": "we should legalize nuclear bombs",
+    "url": "hawk.coinbase.com",
+    "likes": 42069
 }
 
 ###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Inlhbmd6aXppIiwiaWQiOiI2N2I4NzAxODhhZTA4ZWExMzFlYzQ3ZjgiLCJpYXQiOjE3NDAxNDY4MjV9.Ohpouej9bLT0XRqGV8zpwnO3NxWDWiS6e3IzMkiVaZw
 
+{
+    "title": "zee zee post",
+    "url": "cheem.com",
+    "likes": 42069
+}
+
+### 
 PUT http://localhost:3003/api/blogs/6774d8d5308c0645bf8df5ff
 Content-Type: application/json
 
 {
-    "title": "pra tuah",
+    "title": "no hawk tuah",
+    "url": "nope.com",
     "author": "falcon"
 }
 
-###
+### No token auth, POST rejected
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
 
-GET http://localhost:3003/api/blogs
-
-###
-
-GET http://localhost:3003/api/blogs/6772a7ac68a6ea8941d1e3da
-
-###
-
-GET http://localhost:3003/api/blogs/author/hawk%20tuah%20girl
-
-###
-
-DELETE http://localhost:3003/api/blogs/6774d21cf830f5aedb81022f
+{
+    "title": "No doy",
+    "author": "cheems",
+    "url": "cheems.com",
+    "likes": 42069
+}

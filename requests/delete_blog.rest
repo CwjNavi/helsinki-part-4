@@ -1,0 +1,11 @@
+### no token
+DELETE http://localhost:3003/api/blogs/fdsdfs
+
+
+### ivan's token
+DELETE http://localhost:3003/api/blogs/67dc2ca4a3665f9dcd31a87c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImN3aml2YW4iLCJpZCI6IjY3ZGMyN2JlMTBkYjc0ODAyOWFmY2Q3YSIsImlhdCI6MTc0MjQ4MjU2M30.qvvx1IauNUDV6biGNbAglB16SQ2v8vviupbIHlB0p2U
+
+### zizi's token
+DELETE http://localhost:3003/api/blogs/67dba9dfc5ea66082c66401e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Inlhbmd6aXppIiwiaWQiOiI2N2I4NzAxODhhZTA4ZWExMzFlYzQ3ZjgiLCJpYXQiOjE3NDEyNzgwMjR9.qCxBygzbuuDaZMTBEnS9625UVnKVD-bT4-huAeTpf7M

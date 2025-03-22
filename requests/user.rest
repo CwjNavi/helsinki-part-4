@@ -1,0 +1,41 @@
+GET http://localhost:3003/api/users
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "yangzizi",
+    "name": "zeey",
+    "password": "iheartdai"
+}
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "cwjivan",
+    "name": "ivan",
+    "password": "chan"
+}
+### password too short
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "jo",
+    "name": "iv",
+    "password": "chooooo"
+}
+
+### password too short
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "jossss",
+    "name": "iv",
+    "password": "ch"
+}
+
